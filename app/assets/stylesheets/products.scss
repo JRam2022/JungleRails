@@ -76,6 +76,7 @@ main section.categories-show {
         span:last-of-type {
           font-size: 0.5em;
         }
+
       }
       div {
         display: flex;
@@ -95,4 +96,8 @@ main section.categories-show {
       }
     }
   }
+}
+
+#Sold_out {
+  background: red;
 }
