@@ -46,7 +46,7 @@ cat1.products.create!({
   As a defense mechanism the Giant Tea grow slippery leaves to prevent insects from easily eaten them.
   They rely on animal pollination to reproduce. To promote pollination, they produce aromatic scents.",
   image: open_asset('plante_1.jpg'),
-  quantity: 0,
+  quantity: 7,
   price: 64.99
 })
 
@@ -198,7 +198,7 @@ cat3.products.create!({
   As a defense mechanism the Void Fennel has a thick, wooden stem.
   They rely on water currents to carry their seeds away to reproduce. Once pollinated, they grow fairly large, inedible fruits.",
   image: open_asset('plante_11.jpg'),
-  quantity: 2,
+  quantity: 0,
   price: 87.65
 })
 
