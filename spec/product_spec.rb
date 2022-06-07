@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Product, type: :model do 
   describe 'Validations' do
     context "given all fields" do
-      it "is true" do
+      it "is valid" do
         category = Category.create(name: 'trees')
         product = Product.new(name:'Test', price:99, quantity:2, category: category)
         expect(product).to be_valid
