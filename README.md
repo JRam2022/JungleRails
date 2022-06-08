@@ -24,7 +24,7 @@ A mini e-commerce application built with Rails 6.1
 
 ### Cart
 
-!["Screenshot cart"](https://github.com/JRam2022/JungleRails/blob/master/docs/checkout-cart.png?raw=true)
+!["Screenshot cart"](https://github.com/JRam2022/JungleRails/blob/master/docs/cart-page.png?raw=true)
 
 ### Checkout
 
