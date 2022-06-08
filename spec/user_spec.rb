@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+  
   describe 'User Validations' do
     context 'Given all fields, email is unique AND password is minumum length' do
       it 'Passes validation' do
@@ -28,7 +29,7 @@ RSpec.describe User, type: :model do
     end
 
     describe '.authenticate_with_credentials' do
-      context 'checks if user is able to login' do
+      context 'checks if user is able to login with new method' do
         it 'return user when matches' do
           userCreate = User.create(first_name:'J', last_name:'R', email:'test@test.com', password:'12', password_confirmation:'12')
           user = User.authenticate_with_credentials('test@test.com', '12')
@@ -68,7 +69,7 @@ RSpec.describe User, type: :model do
         expect(user).to eql(userCreate)
         end
       end
- 
+
     end 
   end
 end
