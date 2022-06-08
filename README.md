@@ -1,6 +1,44 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 6.1 
+
+
+## Final Product
+
+
+### Home page
+
+!["Screenshot home"](https://github.com/JRam2022/JungleRails/blob/master/docs/home-page.png?raw=true)
+
+### Products
+
+!["Screenshot products"](https://github.com/JRam2022/JungleRails/blob/master/docs/home-products.png?raw=true)
+
+### Admin Products
+
+!["Screenshot admin products"](https://github.com/JRam2022/JungleRails/blob/master/docs/admin-products.png?raw=true)
+
+### Admin Categories
+
+!["Screenshot admin categories"](https://github.com/JRam2022/JungleRails/blob/master/docs/admin-categories.png?raw=true)
+
+### Cart
+
+!["Screenshot cart"](https://github.com/JRam2022/JungleRails/blob/master/docs/checkout-cart.png?raw=true)
+
+### Checkout
+
+!["Screenshot checkout"](https://github.com/JRam2022/JungleRails/blob/master/docs/checkout-cart.png?raw=true)
+
+### Payment
+
+!["Screenshot payment"](https://github.com/JRam2022/JungleRails/blob/master/docs/checkout-payment.png?raw=true)
+
+### Order Confirmation
+
+!["Screenshot confirmation"](https://github.com/JRam2022/JungleRails/blob/master/docs/order-confirmed.png?raw=true)
+
+
 
 ## Setup
 
