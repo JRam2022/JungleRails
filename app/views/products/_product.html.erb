@@ -13,7 +13,7 @@
       <%= fa_icon "shopping-cart", text: 'Add' %> 
     <% end %>
     <% else %>
-    <button type="button" id="Sold_out"class="btn btn-danger">Sold Out</button>
+    <span class="badge badge-secondary" id="Sold_out">Sold Out</span>
     <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
     method: :post, disabled: true do %>
       <%= fa_icon "shopping-cart", text: 'Add' %> 
