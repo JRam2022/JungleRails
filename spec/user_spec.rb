@@ -44,7 +44,31 @@ RSpec.describe User, type: :model do
         expect(user).not_to eql(userCreate)
         end
       end
-      
+
+      context 'Email case sensitivity should not matter' do
+        it 'return nil when no match' do
+          userCreate = User.create(first_name:'J', last_name:'R', email:'test@test.com', password:'12', password_confirmation:'12')
+          user = User.authenticate_with_credentials('tEsT@teSt.cOm', '12')
+        expect(user).to eql(userCreate)
+        end
+      end
+
+      context 'If Email is entered with spaces' do
+        it 'passes authentication' do
+          userCreate = User.create(first_name:'J', last_name:'R', email:'test@test.com', password:'12', password_confirmation:'12')
+          user = User.authenticate_with_credentials('  test@test.com  ', '12')
+        expect(user).to eql(userCreate)
+        end
+      end
+
+      context 'If Email is entered with spaces and Upper/Lower case' do
+        it 'passes authentication' do
+          userCreate = User.create(first_name:'J', last_name:'R', email:'test@test.com', password:'12', password_confirmation:'12')
+          user = User.authenticate_with_credentials('  TeSt@test.Com  ', '12')
+        expect(user).to eql(userCreate)
+        end
+      end
+ 
     end 
   end
 end
